@@ -1,0 +1,92 @@
+<?php
+include 'connectDB.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-lg-3">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="#">Bus Ticket Booking</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="signup.html">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav end -->
+    <main>
+        <!-- signup form -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-4 mx-auto my-5 shadow" style="max-width: 400px;">
+                        <div class="signup-form">
+                            <h2 class="text-center">Signup</h2>
+                            <br>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="John">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="johndoe">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary btn-block d-block mx-auto w-100">Signup</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- signup form end -->
+    </main>
+
+    <footer class="bg-dark text-white text-center">
+        <p class="mb-0">&copy; Atik Akbar</p>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
