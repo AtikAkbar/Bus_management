@@ -1,5 +1,19 @@
 <?php
-include 'connectDB.php';
+session_start(); // Start the session
+
+// Check if the user is logged in by checking if the session variable is set
+if (!isset($_SESSION['user_id'])) {
+    // If not logged in, redirect to the login page
+    header("Location: index.php");
+    exit();
+}
+
+// Access session data
+$userId = $_SESSION['user_id'];
+$firstName = $_SESSION['first_name'];
+$lastName = $_SESSION['last_name'];
+$email = $_SESSION['email'];
+$phone = $_SESSION['phone'];
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +21,7 @@ include 'connectDB.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Booking Page</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
@@ -22,25 +36,23 @@ include 'connectDB.php';
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-lg-auto">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link text-white" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="signup.html">Signup</a>
+                <a class="nav-link text-white" href="signup.php">Signup</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="login.html">Login</a>
+                <a class="nav-link text-white" href="logout.php">Logout</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- nav end -->
-    <main>
-        <section class="text-center my-lg-5">
-            <h1 class="display-4">Book Your Bus Ticket Online</h1>
-            <p class="lead">Easy and convenient way to book your bus ticket</p>
-        </section>
+    
+    <main class="min-vh-100">
         <!-- signup form -->
+        
         <section class="my-lg-5">
             <div class="row justify-content-center">
               <div class="col-md-6 col-lg-4">
@@ -73,10 +85,6 @@ include 'connectDB.php';
                         <label for="date">Date:</label>
                         <input type="date" class="form-control" id="date" />
                       </div>
-                      <div class="form-group mb-2">
-                        <label for="passengers">Number of Passengers:</label>
-                        <input type="number" class="form-control" id="passengers" />
-                      </div>
                       <br> 
                       <button type="submit" class="btn btn-primary btn-block d-block mx-auto w-100">Find Buses</button>
                     </form>
@@ -94,3 +102,4 @@ include 'connectDB.php';
     <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

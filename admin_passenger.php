@@ -29,16 +29,16 @@ include 'connectDB.php';
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="admin.html" class="nav-link text-white" > Home </a>
+            <a href="admin_dashbord.html" class="nav-link text-white"> Home </a>
           </li>
           <li>
-            <a href="passenger.html" class="nav-link text-white"> Passenger </a>
+            <a href="admin_passenger.html" class="nav-link active text-white" aria-current="page"> Passenger </a>
           </li>
           <li>
-            <a href="driver.html" class="nav-link active text-white" aria-current="page"> Driver </a>
+            <a href="admin_driver.html" class="nav-link text-white" > Driver </a>
           </li>
           <li>
-            <a href="bus.html" class="nav-link text-white"> Bus </a>
+            <a href="admin_bus.html" class="nav-link text-white"> Bus </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white"> Schedule </a>
@@ -54,15 +54,15 @@ include 'connectDB.php';
       <!-- dashboard content -->
       <div id="content-wrapper" class="d-flex flex-column flex-grow-1">
         <div class="container-fluid">
-          <h1 class="mt-4">Driver</h1>
-          <table class="table table-striped table-bordered" id="drivers-table">
+          <h1 class="mt-4">Passenger</h1>
+          <table class="table table-striped table-bordered" id="passengers-table">
             <thead>
               <tr>
-                <th scope="col">Driver ID</th>
+                <th scope="col">Passenger ID</th>
                 <th scope="col">Username</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone Number</th>
-                <th scope="col">Schedule</th>
+                <th scope="col">Travel Date</th>
                 <th scope="col">Route</th>
                 <th scope="col">Bus Number</th>
                 <th scope="col">Actions</th>

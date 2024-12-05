@@ -29,18 +29,18 @@ include 'connectDB.php';
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="admin.html" class="nav-link active" aria-current="page">
+            <a href="admin_dashbord.html" class="nav-link active" aria-current="page">
               Home
             </a>
           </li>
           <li>
-            <a href="passenger.html" class="nav-link text-white"> Passenger </a>
+            <a href="admin_passenger.html" class="nav-link text-white"> Passenger </a>
           </li>
           <li>
-            <a href="driver.html" class="nav-link text-white"> Driver </a>
+            <a href="admin_driver.html" class="nav-link text-white"> Driver </a>
           </li>
           <li>
-            <a href="bus.html" class="nav-link text-white"> Bus </a>
+            <a href="admin_bus.html" class="nav-link text-white"> Bus </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white"> Schedule </a>

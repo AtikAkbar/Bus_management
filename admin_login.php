@@ -2,7 +2,6 @@
 include 'connectDB.php';
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,22 +21,25 @@ include 'connectDB.php';
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-lg-auto">
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-white" href="signup.html">Signup</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="login.html">Login</a>
-                </li>
-              </ul>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="signup.php">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="login.php">Admin</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- nav end -->
-    <main class="min-vh-100">
+    <main>
+        <section class="text-center my-lg-5">
+            <h1 class="display-4">Book Your Bus Ticket Online</h1>
+            <p class="lead">Easy and convenient way to book your bus ticket</p>
+        </section>
         <!-- signup form -->
         <div class="container p-lg-5">
             <div class="row justify-content-center ">
@@ -45,12 +47,12 @@ include 'connectDB.php';
                     
                     <div class="card-body p-4 mx-auto my-auto shadow" style="max-width: 400px;">
                         <div class="signup-form">
-                            <h2 class="text-center">Login</h2>
+                            <h2 class="text-center">Admin Login</h2>
                             <br>
                             <form>
                                 <div class="mb-3">
-                                    <label for="username" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="abc@xyz.com">
                                 </div>
                                 <div class="mb-3">
                                     <label for="password" class="form-label">Password</label>
@@ -66,6 +68,7 @@ include 'connectDB.php';
         </div>
         <!-- signup form end -->
     </main>
+    
 
     <footer class="bg-dark text-white text-center">
         <p class="mb-0">&copy; Atik Akbar</p>
@@ -73,3 +76,4 @@ include 'connectDB.php';
     <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
