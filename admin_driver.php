@@ -74,6 +74,10 @@ if ($result->num_rows > 0) {
                 <li><a href="admin_bus.html" class="nav-link text-white">Bus</a></li>
                 <li><a href="#" class="nav-link text-white">Schedule</a></li>
                 <li><a href="#" class="nav-link text-white">Route</a></li>
+                <li><a href="admin_tbooking.php" class="nav-link text-white"> Ticket Booking </a></li>
+                <li>
+                    <a href="logout.php" class="nav-link text-white"> Logout </a>
+                </li>
             </ul>
             <hr />
         </div>

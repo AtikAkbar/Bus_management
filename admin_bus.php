@@ -4,12 +4,14 @@ include 'connectDB.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.min.css" />
     <title>Dashboard</title>
 </head>
+
 <body>
     <div class="d-flex" id="wrapper">
         <!-- sidebar -->
@@ -39,6 +41,12 @@ include 'connectDB.php';
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white"> Route </a>
+                </li>
+                <li>
+                    <a href="admin_tbooking.php" class="nav-link text-white"> Ticket Booking </a>
+                </li>
+                <li>
+                    <a href="logout.php" class="nav-link text-white"> Logout </a>
                 </li>
             </ul>
             <hr />
@@ -77,4 +85,5 @@ include 'connectDB.php';
     <!-- Bootstrap JS (optional, for dropdowns, modals, etc.) -->
     <script src="bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
